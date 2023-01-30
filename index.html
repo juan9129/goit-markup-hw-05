@@ -62,9 +62,18 @@
             SOLUCIONES EFICACES PARA <br />
             SU NEGOCIO
           </h1>
-          <button type="button" class="button-effective-solutions">
+          <button type="button" class="button-effective-solutions"data-modal-open>
             Solicite nuestro servicio
           </button>
+          <div class="backdrop is-hidden"data-modal>
+            <div class="modal">
+              <button class="close-button"data-modal-close>
+                <svg class="x-button">
+                  <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- section-2 -->
@@ -430,5 +439,6 @@
           </ul>
         </div>  
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
