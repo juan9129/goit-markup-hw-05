@@ -13,6 +13,7 @@ body {
 }
 a {
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 ul {
   list-style-type: none;
@@ -27,6 +28,7 @@ header {
   border-bottom: 15px;
   border-color: #212121;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -78,6 +80,7 @@ header {
 }
 .header-element:hover {
   color: var(--brand-color);
+
 }
 .header-element:active {
   color: var(--brand-color);
@@ -307,6 +310,9 @@ padding: 0px;
   justify-content: center;
   border-radius: 50%;
   width: 44px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .our-team-members-icon-container:hover{
   fill: #FFFFFF;
@@ -354,6 +360,9 @@ padding-bottom: 44px;
   margin-bottom: 161px;
   padding: 12px;
   fill: #AFB1B8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .svg-class-regular-clients:hover {
   fill:var(--background-button-color) ;
@@ -406,7 +415,17 @@ padding-bottom: 44px;
   width: 261px;
   height: 50px;
   border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),     
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.button-effective-solutions:hover{
+  border: 1px solid #0f4979;
+}
+
 .backdrop.is-hidden{
   visibility: hidden;
   opacity: 0;
@@ -421,7 +440,8 @@ padding-bottom: 44px;
   background: rgba(0, 0, 0, 0.2);;
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   z-index: 1;
 }
@@ -454,6 +474,9 @@ margin: auto;
   width: 25px;
   height: 25px;
   cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2)
 }
 .x-button{
   width: 11px;
@@ -473,6 +496,9 @@ margin: auto;
   background-color: #f5f4fa;
   cursor: pointer;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .buttons-filters:hover {
   color: var(--button-color);
@@ -594,6 +620,7 @@ margin: auto;
   font-size: 14px;
   line-height: 1;
   text-decoration: none;
+  
 }
 
 .footer-elements:hover {
@@ -657,6 +684,9 @@ margin: auto;
     border-radius: 50%;
     width: 44px;
     background: rgba(255, 255, 255, 0.1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
   }
   .footer-social-media-icon-container:hover{
     display: flex;
